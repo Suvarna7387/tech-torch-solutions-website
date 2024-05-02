@@ -1,0 +1,52 @@
+/* Information.css */
+.information-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 120px;
+  }
+  
+  .image-container {
+    order: 2;
+    flex-basis: 60%; /* Set width to 60% */
+  }
+  
+  .image-container img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .content-container {
+    flex-grow: 1;
+    margin-right: 20px;
+    flex-basis: 40%; /* Set width to 40% */
+    margin-left: 7%;
+    text-align: left; 
+  }
+  
+  @media (max-width: 768px) {
+    .information-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      order: 1;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      flex-basis: 100%; 
+    }
+    .image-container img{
+      max-width: 90%;
+    }
+  
+    .content-container {
+      margin-right: 0;
+      flex-basis: 100%; /* Set width to 100% on smaller screens */
+    }
+  }
+  .discover-button {
+    align-self: flex-start; /* Align button to the left side */
+    margin-top: 25px !important;
+  }

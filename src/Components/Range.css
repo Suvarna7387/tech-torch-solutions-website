@@ -1,0 +1,39 @@
+/* Range.css */
+
+.range-container {
+    background-color: #201f1f;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8%;
+    flex-wrap: wrap; /* Allow items to wrap when screen size decreases */
+}
+
+.range-item {
+    padding: 10px; /* Add padding for spacing */
+    width: 100%; /* Set width to 100% to occupy full width when wrapped */
+    text-align: center; /* Center align text */
+}
+
+.count {
+    font-size: 28px; /* Adjust font size for the count */
+    font-weight: bold; /* Make count bold */
+}
+
+.label {
+    font-size: 20px; /* Adjust font size for the label */
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    /* Apply styles only for screen sizes larger than or equal to 768px */
+    .range-container {
+        flex-direction: row; /* Maintain horizontal layout for larger screens */
+    }
+  
+    .range-item {
+        width: auto; /* Reset width to auto for larger screens */
+        
+    }
+}

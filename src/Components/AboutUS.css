@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    flex-direction: row; /* Default flex direction */
+  }
+  
+  .leftContent {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .rightContent {
+    width: 40%;
+    padding-left: 20px;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+    color: #8d6ee4;
+    font-family: "Roboto Sans-serif";
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 1.1em;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #8d6ee4;
+    font-family: "Roboto Sans-serif";
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+  
+  .resultContainer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: "Roboto Sans-serif";
+    font-size: 80px;
+    font-weight: 600;
+  }
+  
+  .discoverContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #000 !important; /* Text color black */
+  }
+  
+  .textContainer {
+    flex: 1; /* Take remaining space */
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .imageDiscover {
+    width: 40%;
+    margin: 30px;
+    margin-top: 40px;
+    border-radius: 50%;
+    clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 20% 90%, 20% 100%, 0% 35%);
+  }
+  
+  .imageBrilliance {
+    width: 40%;
+    height: 70vh; /* Set height to 70% of the viewport height */
+    margin: 30px;
+    margin-top: 40px;
+    border-radius: 50%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 30% 100%, 10% 75%, 0% 25%);
+  }
+  
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+    .discoverContainer {
+      flex-direction: column;
+    }
+    .title {
+      font-size: 40px;
+      line-height: 1em;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 1.2;   
+    }
+    .resultContainer{
+        font-size: 28px;
+        /* padding: 10px; */
+    }
+    .textContainer {
+        flex: 1; /* Take remaining space */
+        width: 100%;
+        padding: 20px;
+      }
+      .imageBrilliance{
+        height: 30vh;
+      }
+  }
+  
+  
