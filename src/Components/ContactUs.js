@@ -8,15 +8,20 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const ContactUs = () => {
+  const phoneNumber = "+91-8010911708";
+  const whatsappLink = `https://wa.me/${phoneNumber.replace("+", "")}`;
+
   return (
     <div className="contact-container">
       <div className="contactus-firstchild">
         <div className="contactUStext-outer">
           <h3>CONTACT US</h3>
-          <div className="contactUS-icons-wrapper">
+           <a style={{ color: "white", textDecoration: "none" }} href={whatsappLink} target="_blank" rel="noopener noreferrer">
+            <div className="phone_Number_wrapper">
             <PhoneIcon className="contactUS-icons" />{" "}
-            <div>+91-7038782722</div>
-          </div>
+            <div>{phoneNumber}</div>
+            </div>              
+            </a>
           <div className="contactUS-icons-wrapper">
             <EmailIcon className="contactUS-icons" />{" "}
             contact@techtorchsolutions.com
