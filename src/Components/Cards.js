@@ -12,7 +12,6 @@
   import "./Cards.css"
 
   const Cards = () => {
-    // Array of objects containing data for each card
     const cardData = [
       {
         title: "App Development",
@@ -47,7 +46,6 @@
           <Card key={index} sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <CardMedia
-                // component="img"
                 sx={{ height: 270 }}
                 image={card.image}
                 alt={card.title}
